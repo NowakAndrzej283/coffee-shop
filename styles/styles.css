@@ -8,16 +8,23 @@
   display: flex;
   justify-content: space-between;
 }
-.logo:link,
-.logo:visited {
-  text-decoration: none;
-  font-size: 2.4rem;
-  color: #333;
+.logo{
+    display: flex;
+    font-size: 4.8rem;
+    gap: 2rem;
 }
-.logo:hover,
-.logo:active {
-  color: #333;
+
+.logo-text:link, .log-text:visited{
+    text-decoration: none;
+    color:#333;
 }
+.logo-text:hover, .log-text:active{
+    color:#333;
+}
+.main-nav{
+    align-self: center;
+}
+
 .main-nav-list {
   display: flex;
   gap: 8rem;
@@ -49,6 +56,7 @@
   /* align-items: center; */
   height: 100vh;
   padding: 9.6rem 3.6rem 4rem 3.6rem;
+  column-gap: 5rem;
 }
 .hero-img-box {
   justify-items: center;
@@ -112,7 +120,7 @@
   justify-self: center;
 }
 .product-description {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 1.6rem 3.2rem 1.6rem 3.2rem;
   line-height: 2;
 }
@@ -141,6 +149,8 @@
   justify-self: center;
   margin-top: 2rem;
   color: #fff;
+  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
 }
 
 /* SECTION HOW IT WORKS */
@@ -182,10 +192,10 @@
 .cta{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    
+    box-shadow: 0 0.2rem 0.4rem #333;   
 }
 .cta-text-box{
-    padding: 1.8rem;
+    padding: 5rem;
 }
 .cta-heading{
     font-size: 3.4rem;
@@ -202,7 +212,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
-    column-gap: 2rem;
+    column-gap: 2.4rem;
 }
 .cta-form label{
     display: block;
@@ -230,6 +240,72 @@
     box-shadow: 0 0 0 0.8rem rgba(24, 100, 171, 0.5);
 }
 .cta-img-box{
-    background-image: linear-gradient(to right, #1864ab21, #d0ebff31), url('../img/iced-latte.jpg');
+    background-image: linear-gradient(to right, #1864ab21, #d0ebff31), url('../img/iced-latte.avif');
     background-size: cover;
+}
+
+/* FOOTER */
+.footer{
+    border-top: 0.1rem solid #33333356;
+    
+}
+.footer-logo{
+    font-size: 3.2rem;
+    margin: 1.8rem 0;
+}
+.social-list{
+    list-style: none;
+    
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.copyright{
+    font-size: 1.2rem;
+    color: #222
+}
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.8rem;
+}
+.contacts{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+.footer-link:link, .footer:visited{
+    color: #333;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+.footer-link:hover, .footer:active{
+    color: #1864ab;
+}
+.nav-col{
+
+}
+.footer-nav{
+    list-style: none;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 0.6rem;
+    text-align: center;
+}
+
+.footer-link:link, .footer-link:visited{
+    color: #333;
+}
+.footer-link:hover, .footer-link:active{
+    color: #1864ab;
 }
