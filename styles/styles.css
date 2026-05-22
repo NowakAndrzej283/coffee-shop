@@ -1,158 +1,235 @@
 /* HEADER SECTION */
-.header{
-    background-color: #f1f3f5;
-    padding: 4rem;
-    border-bottom: 2px solid #333;
-    box-shadow: 0 2px 10px #333;
+.header {
+  background-color: #f1f3f5;
+  padding: 4rem;
+  border-bottom: 2px solid #333;
+  box-shadow: 0 2px 10px #333;
 
+  display: flex;
+  justify-content: space-between;
+}
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #333;
+}
+.logo:hover,
+.logo:active {
+  color: #333;
+}
+.main-nav-list {
+  display: flex;
+  gap: 8rem;
+  list-style: none;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
 
-    display: flex;
-    justify-content: space-between;
-
+  transition: all 0.3s;
 }
-.logo:link, .logo:visited{
-    text-decoration: none;
-    font-size: 2.4rem;
-    color:#333
-}
-.logo:hover, .logo:active{
-    color:#333
-}
-.main-nav-list{
-    display: flex;
-    gap: 8rem;
-    list-style: none;
-}
-.main-nav-link:link, .main-nav-link:visited{
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: #333;
-
-    transition: all 0.3s;
-}
-.main-nav-link:hover, .main-nav-link:active{
-    color: #1864ab;
-    border-bottom: 2px solid #1864ab;
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #1864ab;
+  border-bottom: 2px solid #1864ab;
 }
 
 /* HERO SECTION */
-.section-hero{
-    background-image: linear-gradient( #1864ab, #fff);
+.section-hero {
+  background-image: linear-gradient(#1864ab, #fff);
 }
-.hero{
-    display: grid;
+.hero {
+  display: grid;
 
-    grid-template-columns: 3fr 2fr;
-    /* align-items: center; */
-    height: 100vh;
-    padding: 9.6rem 3.6rem 4rem 3.6rem;
+  grid-template-columns: 3fr 2fr;
+  /* align-items: center; */
+  height: 100vh;
+  padding: 9.6rem 3.6rem 4rem 3.6rem;
 }
-.hero-img-box{
-    justify-items: center;
+.hero-img-box {
+  justify-items: center;
+  padding: 0 3.2rem;
+  overflow: hidden;
+}
+.hero-img-item{
+    overflow: hidden;
 }
 .hero-img {
-    max-width: 90%;
+    display: block;
+    max-width: 100%;
     text-align: center;
+    transition: all 0.5s;
+    border-radius: 0.9rem;
 }
-.hero-description{
-    font-size: 2.4rem;
-    line-height: 1.6;
+.hero-img:hover {
+    transform: scale(1.05);
+  }
+.hero-description {
+  font-size: 2.4rem;
+  line-height: 1.6;
 }
-.hero-btns{
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 /* OUR STORY SECTION */
-.story-box{
+.story-box {
 }
-.story-img{
-    max-width: 80%;
-    height: 80%;
-    align-self: center;
-    justify-self: center;
+.story-img {
+  max-width: 80%;
+  height: 80%;
+  align-self: center;
+  justify-self: center;
 }
-.story-box img{
-    box-shadow: 0 1rem 1rem black;
+.story-box img {
+  box-shadow: 0 1rem 1rem black;
 }
-.story-text{
-    font-size: 2.4rem;
-    line-height: 1.8;
-    font-weight: 500;
-    align-self: center;
+.story-text {
+  font-size: 2.4rem;
+  line-height: 1.8;
+  font-weight: 500;
+  align-self: center;
 }
 
 /* PRODUCTS SECTION */
-.box-product{
-    border: 0.1rem dotted #1864ab;
-    padding-bottom: 1.2rem;
-    border-radius: 1.1rem;
-    box-shadow: 0 1rem 0.1rem #1971c2;
+.box-product {
+  border: 0.1rem dotted #1864ab;
+  padding-bottom: 1.2rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 1rem 0.1rem #1971c2;
 }
-.heading-product{
-    display: block;
-    font-size: 2.8rem;
-    font-weight: 600;
-    padding: 3.6rem 1.8rem 1.8rem 1.8rem;
-    justify-self: center;
+.heading-product {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding: 3.6rem 1.8rem 1.8rem 1.8rem;
+  justify-self: center;
 }
-.product-description{
-    font-size: 1.8rem;
-    padding: 1.6rem 3.2rem 1.6rem 3.2rem;
-    line-height: 2;
+.product-description {
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+  line-height: 2;
+}
+.product-list {
+  list-style: none;
+  color: #333;
+  font-size: 1.6rem;
+  padding: 3.6rem 3.2rem;
 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.product-list{
-    list-style: none;
-    color: #333;
-    font-size: 1.6rem;
-    padding: 3.6rem 3.2rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.product-item {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
 }
-.product-item{
-    display: flex;
-    gap: 3.2rem;
-    align-items: center;
+.product-icon {
+  fill: #4b3100;
 }
-.product-icon{
-    fill: #4b3100;   
-}
-.product-price{
-    display: block;
-    font-size: 1.4rem;
-    font-weight: 500;
-    justify-self: center;
-    margin-top: 2rem;
-    color: #fff;
+.product-price {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  justify-self: center;
+  margin-top: 2rem;
+  color: #fff;
 }
 
 /* SECTION HOW IT WORKS */
+.how {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: linear-gradient(to right bottom, #1864ab, #d0ebff);
+  
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.945);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  margin-bottom: 12.8rem;
+}
+.how-img-box {
+}
+.how-img {
+  display: block;
+  align-self: start;
+  max-width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0.1rem #4b3100;
 
+}
+.how-text-box{
+    padding: 4rem;
+}
+.how-list{
+    list-style: decimal;
+    font-size: 1.8rem;
+    font-weight: 500;
 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+}
 
+/* CTA SECTION */
+.cta{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    
+}
+.cta-text-box{
+    padding: 1.8rem;
+}
+.cta-heading{
+    font-size: 3.4rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
 
+}
+.cta-description{
+    font-size: 2.3rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.4;
+}
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.cta-form label{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cta-form input, .cta-form select{
+    width: 100%;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.8rem;
+    font-size: 1.6rem;
+}
+.cta-input{
+    border: 0.1rem solid #1971c2;
+    border-radius: 0.9rem;
+}
+.cta-input::placeholder{
+    font-size: 1.6rem;
+}
+.cta *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(24, 100, 171, 0.5);
+}
+.cta-img-box{
+    background-image: linear-gradient(to right, #1864ab21, #d0ebff31), url('../img/iced-latte.jpg');
+    background-size: cover;
+}

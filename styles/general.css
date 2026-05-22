@@ -73,7 +73,7 @@ body {
 .grid {
   display: grid;
   column-gap: 2rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 12.8rem;
 }
 
 .grid--2-cols{
@@ -113,6 +113,12 @@ body {
   color: #333;
 }
 
+.btn.btn--sign-up{
+  display: inline-block;
+  align-self: end;
+  padding: 1.8rem;
+
+}
 .margin-top-md{
     margin-top: 8rem;
 }
