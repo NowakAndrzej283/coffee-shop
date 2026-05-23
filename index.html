@@ -14,26 +14,67 @@
     />
     <link rel="stylesheet" href="./styles/general.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/queries.css" />
 
     <!-- Icon -->
     <link rel="icon" href="img/favicon-coffee2.avif" />
     <title>Coffee that matches your needs</title>
   </head>
   <body>
-    <header class="header">
-        <div class="logo">
-          <p class="logo-text">Coffee cup</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#000000" viewBox="0 0 256 256"><path d="M80,56V24a8,8,0,0,1,16,0V56a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,120,64Zm32,0a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,152,64Zm96,56v8a40,40,0,0,1-37.51,39.91,96.59,96.59,0,0,1-27,40.09H208a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H56.54A96.3,96.3,0,0,1,24,136V88a8,8,0,0,1,8-8H208A40,40,0,0,1,248,120ZM200,96H40v40a80.27,80.27,0,0,0,45.12,72h69.76A80.27,80.27,0,0,0,200,136Zm32,24a24,24,0,0,0-16-22.62V136a95.78,95.78,0,0,1-1.2,15A24,24,0,0,0,232,128Z"></path></svg>
-        </div>
-    
+    <header class="header nav-open">
+      <div class="logo">
+        <p class="logo-text">Coffee&UnderBar;cup</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="logo-icon"
+          width="48"
+          height="48"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M80,56V24a8,8,0,0,1,16,0V56a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,120,64Zm32,0a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,152,64Zm96,56v8a40,40,0,0,1-37.51,39.91,96.59,96.59,0,0,1-27,40.09H208a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H56.54A96.3,96.3,0,0,1,24,136V88a8,8,0,0,1,8-8H208A40,40,0,0,1,248,120ZM200,96H40v40a80.27,80.27,0,0,0,45.12,72h69.76A80.27,80.27,0,0,0,200,136Zm32,24a24,24,0,0,0-16-22.62V136a95.78,95.78,0,0,1-1.2,15A24,24,0,0,0,232,128Z"
+          ></path>
+        </svg>
+      </div>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Our story</a></li>
-          <li><a class="main-nav-link" href="#">Our coffees</a></li>
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#our-story">Our story</a></li>
+          <li><a class="main-nav-link" href="#our-coffees">Our coffees</a></li>
+          <li>
+            <a class="main-nav-link" href="#how-it-works">How it works</a>
+          </li>
+          <li><a class="main-nav-link" href="#sign-up">Sign up</a></li>
         </ul>
       </nav>
+      
+      <button class="btn-mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          max-width="32"
+          max-height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="icon-mobile-nav"
+        >
+          <path
+            d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          max-width="32"
+          max-height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="icon-mobile-nav"
+        >
+          <path
+            d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+          ></path>
+        </svg>
+      </button>
     </header>
 
     <main>
@@ -42,7 +83,7 @@
           <div class="hero-img-box">
             <figure class="hero-img-item">
               <img
-                src="/img/coffee-shop.avif"
+                src="./img/coffee-shop.avif"
                 alt="Coffee shop shown from inside with people inside"
                 class="hero-img"
               />
@@ -55,15 +96,15 @@
               in small batches to ensure every cup delivers perfect flavor.
             </p>
             <div class="hero-btns">
-              <a href="#" class="btn">Try for free</a>
-              <a href="#" class="btn btn-outline">Learn more &darr;</a>
+              <a href="#sign-up" class="btn">Sign up</a>
+              <a href="#our-story" class="btn btn-outline">Learn more &darr;</a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Our story section -->
-      <section class="section-story">
+      <section class="section-story" id="our-story">
         <div class="container story">
           <span class="subheading margin-bottom-sm">our story</span>
           <h2 class="heading-secondary">Coffee is not just a drink.</h2>
@@ -85,8 +126,9 @@
               class="story-img"
             />
             <p class="story-text">
-              Every batch is <strong>freshly</strong> roasted and <strong>carefully tested</strong> by our team to
-              ensure a perfectly balanced flavor profile.
+              Every batch is <strong>freshly</strong> roasted and
+              <strong>carefully tested</strong> by our team to ensure a
+              perfectly balanced flavor profile.
             </p>
             <p class="story-text">
               We don't sell mass-produced coffee — we deliver a
@@ -100,7 +142,8 @@
           </div>
         </div>
       </section>
-      <section class="container section-products">
+      <!-- SECTION PRODUCTS -->
+      <section class="container section-products" id="our-coffees">
         <span class="subheading margin-bottom-md">bestsellers</span>
         <div class="grid grid--3-cols">
           <!-- FIRST PRODUCT -->
@@ -472,7 +515,7 @@
       </section>
 
       <!-- HOW IT WORKS SECTION -->
-      <section class="container section-how">
+      <section class="container section-how" id="how-it-works">
         <span class="subheading margin-bottom-md">how it works</span>
         <div class="how">
           <div class="how-img-box">
@@ -496,7 +539,7 @@
       </section>
 
       <!-- CTA SECTION -->
-      <section class="section-cta">
+      <section class="section-cta" id="sign-up">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -569,7 +612,7 @@
                 </a>
               </li>
               <li>
-                <a href="#"></a>
+                <a href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -601,23 +644,20 @@
             </ul>
             <p class="copyright">
               Copyright &copy; <span class="year">2026</span> by Coffe-cup, Inc.
-              <br>
+              <br />
               Project made by Andrzej Nowak.
-              <br>
-              All rights reserved. 
+              <br />
+              All rights reserved.
             </p>
           </div>
-         
         </div>
         <div class="address-col">
           <p class="footer-heading">Contact us</p>
-          <address class="contacts"  >
-            <p class="address">
-              Kraków, Old Town
-            </p>
+          <address class="contacts">
+            <p class="address">Kraków, Old Town</p>
             <p>
               <a class="footer-link" href="tel:123-456-7">123-456-7</a
-              ><br /><br>
+              ><br /><br />
               <a class="footer-link" href="mailto:hello@coffee.com"
                 >hello@coffe.com</a
               >
@@ -627,8 +667,8 @@
         <nav class="nav-col">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#sign-up">Create account</a></li>
+            <li><a class="footer-link" href="#sign-up">Sign up</a></li>
             <li><a class="footer-link" href="#">iOS app</a></li>
             <li><a class="footer-link" href="#">Android app</a></li>
           </ul>
