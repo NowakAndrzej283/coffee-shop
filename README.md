@@ -1,5 +1,7 @@
 # ☕ Coffee Shop Website
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://nowakandrzej283.github.io/coffee-shop/#)
+
 A modern and responsive coffee shop website built with HTML, CSS, and JavaScript.  
 The website showcases a clean UI, smooth user experience, and a stylish layout for an online coffee shop.
 
@@ -51,3 +53,6 @@ coffee-shop/
 │   └── styles.css
 │
 └── README.md
+```
+## 🌐 Live Demo
+[View Webiste](https://nowakandrzej283.github.io/coffee-shop/#)
