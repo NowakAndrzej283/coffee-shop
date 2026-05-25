@@ -207,9 +207,15 @@
   .cta-input::placeholder {
     font-size: 2rem;
   }
+  .cta-img-box{
+    height: 36rem;
+    background-position-y: 90%;
+    grid-row: 1;
+  }
   #where-field {
     font-size: 2rem;
   }
+  /* FOOTER */
   .footer .grid--3-cols {
     grid-template-columns: 1fr;
     row-gap: 4rem;
