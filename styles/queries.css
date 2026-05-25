@@ -1,5 +1,3 @@
-/* 67 * 16px = 1072px  */
-
 /* BELOW 1072px (landscape tablets)*/
 @media (max-width: 67em) {
   /* 8 / 16 */
@@ -40,6 +38,16 @@
     justify-self: center;
     max-width: 50%;
   }
+  .product-price.btn {
+    padding: 1.6rem 3.2rem;
+    font-size: 2rem;
+  }
+  .product-description {
+    font-size: 2.2rem;
+  }
+  .product-list {
+    font-size: 2rem;
+  }
 }
 
 /* BELOW 688px (bigger phones) */
@@ -48,11 +56,14 @@
   html {
     font-size: 37.5%;
   }
+  .logo-icon {
+    height: 20px;
+    width: 20px;
+  }
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
-    background-color: aqua;
   }
 
   .main-nav {
@@ -92,6 +103,8 @@
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
+    align-items: center;
+    gap: 10rem;
   }
 
   .main-nav-link:link,
@@ -105,5 +118,105 @@
 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
+  }
+  /* HERO */
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-text-box {
+    grid-row: 1;
+  }
+  .hero-img-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 10rem;
+  }
+  .hero-btns {
+    margin-top: 4.7rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+
+  /* PRODUCT SECTION */
+  .section-products .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .box-product {
+    justify-self: center;
+    max-width: 70%;
+    padding: 1.2rem;
+  }
+  .box-product:last-child {
+    max-width: 70%;
+    padding: 1.2rem;
+  }
+  .product-price.btn {
+    padding: 1.6rem 3.2rem;
+    font-size: 2.2rem;
+  }
+  .product-description {
+    font-size: 2.4rem;
+  }
+  .product-list {
+    font-size: 2rem;
+  }
+
+  /* CTA SECTION  */
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    background-position-x: 30%;
+  }
+
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* BELOW 432px (smartphones)*/
+@media (max-width: 27em) {
+  .story-text {
+    font-size: 2.4rem;
+  }
+  .grid--2-cols {
+    row-gap: 8rem;
+  }
+  .how {
+    grid-template-columns: 1fr;
+  }
+
+  .box-product {
+    justify-self: center;
+    max-width: 90%;
+    padding: 1rem;
+  }
+  .box-product:last-child {
+    max-width: 90%;
+    padding: 1rem;
+  }
+  /* CTA */
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-input::placeholder {
+    font-size: 2rem;
+  }
+  #where-field {
+    font-size: 2rem;
+  }
+  .footer .grid--3-cols {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    font-size: 2rem;
+  }
+  .footer-social {
+    margin-top: 4rem;
+    grid-row: 3;
   }
 }
